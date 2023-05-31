@@ -1,0 +1,58 @@
+.create-recipe .btn:not(.btn-light){
+    background-color: var(--easy-chef-brown) !important;
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+}
+
+.create-recipe .btn:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.create-recipe .spinner-border{
+    border-color: rgba(160, 95, 36, 0.8);
+    border-right-color: transparent;
+}
+
+#add-instruction-step{
+    display: block;
+    text-decoration: underline;
+    color: var(--easy-chef-brown);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#add-ingredient{
+    display: block;
+    text-decoration: underline;
+    color: var(--easy-chef-brown);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+#new-recipe-cook-time-label{
+    width: var(--new-recipe-input-label-width);
+}
+#new-recipe-instruction-input-label{
+    width: var(--new-recipe-input-label-width);
+}
+
+#delete-step-button svg, #delete-ingredient-button svg{
+    background-color:transparent !important;
+    color:white !important;
+    background-color:red;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+  

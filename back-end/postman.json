@@ -1,0 +1,1059 @@
+{
+	"info": {
+		"_postman_id": "cc684088-106a-4ca2-94c1-7b138de38ad1",
+		"name": "P2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26209790"
+	},
+	"item": [
+		{
+			"name": "AuthRequired",
+			"item": [
+				{
+					"name": "EDIT ACCOUNT",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MjUxNDc0LCJpYXQiOjE2Nzg2NDY2NzQsImp0aSI6ImY1ZGMyZmRmODQzNzQ0MjFhYTQyNzZiMjliYjIwM2I3IiwidXNlcl9pZCI6NX0.KNjdRmqxCe-VakOSk0fueYWEobVsUv9VQJgvBibDdDo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "DanL9875edited",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "+19055108458",
+									"type": "text"
+								},
+								{
+									"key": "profile_picture",
+									"type": "file",
+									"src": "/Users/daniellaufer/Desktop/random-images/download.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/accounts/3/edit/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"accounts",
+								"3",
+								"edit",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VIEW ACCOUNT",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/accounts/3/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"accounts",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ACCOUNT",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzY0OTgyLCJpYXQiOjE2Nzg3NjAxODIsImp0aSI6ImNmODhkMmE3NjM5MDQ1YWNhMTlhZGQ5ZWVmZGVjNmJlIiwidXNlcl9pZCI6MX0.4TCFTCo27wwv3bT0St9nuhrKEE2kU-MqHZzq_v-VeFI",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/accounts/2/delete/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"accounts",
+								"2",
+								"delete",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE RECIPE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cuisine\": \"chinese\",\n    \"cook_time_minutes\": 5,\n    \"diet\": \"vegan\",\n    \"prep_time_minutes\": 6,\n    \"description\": \"a cool description\",\n    \"steps\": [\n        {\n            \"step_number\": 1,\n            \"instructions\": \"instruction one\",\n            \"cook_time_minutes\": 2,\n            \"prep_time_minutes\": 3\n        },\n        {\n            \"step_number\": 2,\n            \"instructions\": \"instruction two\",\n            \"cook_time_minutes\": 7,\n            \"prep_time_minutes\": 11\n        }\n    ],\n    \"ingredients\": [\n        {\n            \"name\": \"Spinach\",\n            \"quantity_serving_one\": 55,\n            \"quantity_serving_two\": 77\n        },\n        {\n            \"name\": \"Chicken Breast\",\n            \"quantity_serving_one\": 55,\n            \"quantity_serving_two\": 77\n        }\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/2/delete/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"2",
+								"delete",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ANOTHER Cashew Chicken-Style Noodles\",\n    \"cuisine\": \"chinese\",\n    \"cook_time_minutes\": 30,\n    \"diet\": \"vegan\",\n    \"prep_time_minutes\": 30,\n    \"description\": \"This stir-fry offers a perfect balance of flavours and textures. Savoury with a touch of sweetness, this dish combines tender-crisp veggies with irresistibly slurp-able noodles! A final sprinkle of crunchy cashews gives this dinner 10s across the board!\",\n    \"steps\": [\n        {\n            \"step_number\": 1,\n            \"instructions\": \"Before starting, wash and dry all produce. Peel, then cut carrot into 1/4-inch half-moons. Cut bok choy into 1-inch pieces. Cut green onions into 1-inch pieces. Rough chop cashews. Pat chicken dry with paper towels, then cut into 1-inch pieces. Sprinkle half the Moo Shu Spice Blend over chicken, then season with salt and pepper.\",\n            \"cook_time_minutes\": 0,\n            \"prep_time_minutes\": 10\n        },\n        {\n            \"step_number\": 2,\n            \"instructions\": \"Heat a large non-stick pan over medium-high heat. When hot, add cashews to the dry pan. Toast, stirring often, until golden, 3-4 min. (TIP: Keep your eye on them so they don't burn!) Transfer to a plate.\",\n            \"cook_time_minutes\": 4,\n            \"prep_time_minutes\": 1\n        }\n    ],\n    \"ingredients\": [\n        {\n            \"name\": \"Chicken Thighs\",\n            \"quantity_serving_one\": 280,\n            \"quantity_serving_two\": 560,\n            \"quantity_units\": \"g\"\n        },\n        {\n            \"name\": \"Shanghai Bok Choy\",\n            \"quantity_serving_one\": 113,\n            \"quantity_serving_two\": 226,\n            \"quantity_units\": \"g\"\n        }\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/create/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT RECIPE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Cashew Chicken-Style Noodles\",\n    \"cuisine\": \"unrestricted\",\n    \"cook_time_minutes\": 31,\n    \"diet\": \"vegan\",\n    \"prep_time_minutes\": 31,\n    \"description\": \"This stir-fry offers a perfect balance of flavours and textures. Savoury with a touch of sweetness, this dish combines tender-crisp veggies with irresistibly slurp-able noodles! A final sprinkle of crunchy cashews gives this dinner 10s across the board!\",\n    \"steps\": [\n        {\n            \"step_number\": 1,\n            \"instructions\": \"Before starting, wash and dry all produce. Peel, then cut carrot into 1/4-inch half-moons. Cut bok choy into 1-inch pieces. Cut green onions into 1-inch pieces. Rough chop cashews. Pat chicken dry with paper towels, then cut into 1-inch pieces. Sprinkle half the Moo Shu Spice Blend over chicken, then season with salt and pepper.\",\n            \"cook_time_minutes\": 1,\n            \"prep_time_minutes\": 11\n        },\n        {\n            \"step_number\": 2,\n            \"instructions\": \"Heat a large non-stick pan over medium-high heat. When hot, add cashews to the dry pan. Toast, stirring often, until golden, 3-4 min. (TIP: Keep your eye on them so they don't burn!) Transfer to a plate.\",\n            \"cook_time_minutes\": 5,\n            \"prep_time_minutes\": 2\n        }\n    ],\n    \"ingredients\": [\n        {\n            \"name\": \"Chicken Thighs\",\n            \"quantity_serving_one\": 281,\n            \"quantity_serving_two\": 561,\n            \"quantity_units\": \"kg\"\n        },\n        {\n            \"name\": \"Shanghai Bok Choy\",\n            \"quantity_serving_one\": 113,\n            \"quantity_serving_two\": 226,\n            \"quantity_units\": \"kg\"\n        }\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/25/edit/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"25",
+								"edit",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RECIPE MEDIA",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDgzMzM5LCJpYXQiOjE2Nzg0Nzg1MzksImp0aSI6IjZmMGVhMzVhYzAzMTRmZTRhZjdkOWMwZTYzZjk4OTY5IiwidXNlcl9pZCI6NH0.QcRe6rgTNLlPOakhV9k2VBd-tDWl-GLVx_tQw0NHoLg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/daniellaufer/Desktop/random-images/cheers.jpg"
+								},
+								{
+									"key": "recipe_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "cute doggo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/media/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"media",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RECIPE STEP MEDIA",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/daniellaufer/Desktop/random-images/download.jpeg"
+								},
+								{
+									"key": "recipe_step_id",
+									"value": "39",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vibing cat",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/media/step/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"media",
+								"step",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL RECIPES",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/?page=1&popularityDesc=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "popularityDesc",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH RECIPES",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/search/?cuisine=chinese",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "cuisine",
+									"value": "chinese"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH INGREDIENTS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/ingredients/search/?q=apple",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"ingredients",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "apple"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MY RECIPES",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4NTYwMTQyLCJpYXQiOjE2Nzg0NzM3NDIsImp0aSI6ImM1NzczYmVkYWFhMjQ2YWM4ZTAzNWUzNjdhZjQxMDM2IiwidXNlcl9pZCI6NH0.DkwVQxyTXch4xdkWQ3tGEn0-ZygbNE9BgKe8ZDFjBZI",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/my-recipes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"my-recipes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Recipe",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET COMMENTS ON RECIPE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/1/comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"1",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE COMMENT ON RECIPE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "recipe_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "some text here reply",
+									"type": "text"
+								},
+								{
+									"key": "parent_comment_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET LIKES ON RECIPE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/1/likes/?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"1",
+								"likes",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET RECIPE INGREDIENTS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDgzMzM5LCJpYXQiOjE2Nzg0Nzg1MzksImp0aSI6IjZmMGVhMzVhYzAzMTRmZTRhZjdkOWMwZTYzZjk4OTY5IiwidXNlcl9pZCI6NH0.QcRe6rgTNLlPOakhV9k2VBd-tDWl-GLVx_tQw0NHoLg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/1/ingredients/?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"1",
+								"ingredients",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Like ON RECIPE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4MzI2MDA2LCJpYXQiOjE2NzgyMzk2MDYsImp0aSI6ImU5ZTAzZjBkY2ExMDQwNzQ4MDVlOGEyMDYyNDJkN2ZhIiwidXNlcl9pZCI6Mn0.vNVs5nmYpTUavr7c8yTGmG9Gj6-1stA1fnE2ARv1x3E",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "recipe_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/likes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"likes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Favourites ON RECIPE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDgzMTkxLCJpYXQiOjE2Nzg0NzgzOTEsImp0aSI6IjA4OTVmZTE2MjY2MDQ5ODM5NjM5ZWJmNGI1YzQxYWM5IiwidXNlcl9pZCI6NH0.iZH99sznIzx9DV0M2cbiJdFDQA_nX3gafUJQEuyQH8g",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/6/favourites/?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"6",
+								"favourites",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Favourite ON RECIPE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "recipe_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/favourites/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"favourites",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Ratings ON RECIPE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Get all ingredients of o a recipe",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/recipes/6/ratings/?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"6",
+								"ratings",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Rating ON RECIPE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "recipe_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/ratings/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"ratings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD RECIPE TO SHOPPING LIST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id\n",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/shopping-list/add/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"shopping-list",
+								"add",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SHOPPING_LIST_ITEMS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc4NjA1LCJpYXQiOjE2Nzg0NzM4MDUsImp0aSI6IjU1YzYzMGY3ODA4NzRjZGJhNmNiN2MxOGRiYjA5MWNhIiwidXNlcl9pZCI6NH0.3PrdUiP28iRL2PieQEjV98ew5mJ12tUX2oF2qmPJBkY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "recipe_id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/recipes/shopping-list/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"recipes",
+								"shopping-list",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "DanL9876",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/accounts/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "DanL9876",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "+19055108458",
+							"type": "text"
+						},
+						{
+							"key": "profile_picture",
+							"type": "file",
+							"src": "/Users/daniellaufer/Desktop/random-images/33326dcddbf15c56d631e374b62338dc.jpeg"
+						},
+						{
+							"key": "first_name",
+							"value": "Daniel2",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Laufer2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "daniel.laufer@mail.utoronto.ca",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/accounts/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzY2NzM0LCJpYXQiOjE2Nzg3NjE5MzQsImp0aSI6ImRmMDJkNDRiNzExMzRiMGNiNmU5ZWE5MDE5ZDgwMjU2IiwidXNlcl9pZCI6NH0.drJfFfewp03msJv-K0WwEIEezA0IWCFcQ9xM9n4-tDU"
+		}
+	]
+}

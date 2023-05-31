@@ -1,0 +1,23 @@
+
+:root {
+    --easy-chef-brown: rgba(160, 95, 36, 0.8);
+    --easy-chef-brown-lighter: rgba(160, 95, 36, 0.5);
+    --footer-height: 125px;
+    --footer-margin: 30px;
+    --new-recipe-input-label-width: 133px;
+    min-height: 100%;
+}
+html{
+    height: 100%;
+   
+}
+
+body{
+    position: relative;
+    padding-bottom: calc(var(--footer-height) + var(--footer-margin));
+    min-height: 100% !important;
+}
+.form-control:focus {
+    border-color: #ced4da !important; 
+    box-shadow: none !important; 
+  }

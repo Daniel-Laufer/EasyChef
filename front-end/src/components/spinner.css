@@ -1,0 +1,6 @@
+.custom-spinner.spinner-border{
+    border-color: rgba(160, 95, 36, 0.8) !important;
+    border-right-color: transparent !important;
+    height:100px !important;
+    width:100px !important;
+}

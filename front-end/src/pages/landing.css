@@ -1,0 +1,12 @@
+.landing-container .btn:not(.btn-light){
+    background-color: var(--easy-chef-brown) !important;
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+}
+
+.landing-container #sign-up-button{
+    width:130px;
+}

@@ -1,0 +1,102 @@
+.recipes-home-container .btn:not(.serving-toggle){
+    background-color: var(--easy-chef-brown) !important;
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+}
+
+
+.recipes-home-container .btn:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.recipes-home-container .spinner-border{
+    border-color: rgba(160, 95, 36, 0.8);
+    border-right-color: transparent;
+}
+
+.recipe-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    min-height: 595px;
+    justify-content: center;
+    padding-bottom: 1rem;
+    
+}
+.popular-recipe-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    padding-bottom: 1rem;
+    
+}
+
+.recipe-list-wrapper{
+    border: 2px solid #f8f9fa;
+    padding-bottom: 1rem;
+    border-top: 0;
+    padding-top:2rem;
+    margin-top:-20px;
+}
+.popular-recipe-list-wrapper{
+    border: 2px solid #f8f9fa;
+    padding-bottom: 1rem;
+    /* border-top: 0; */
+    /* padding-top:2rem;*/
+    padding-top:20px;
+}
+.recipe-pagination-button-container{
+    padding: 0 1rem;
+}
+.recipe-pagination-button-container .btn{
+    width:87px;
+}
+
+
+.recipes-home-container .dropdown-item.active{
+    background-color: var(--easy-chef-brown) !important;
+}
+.recipes-home-container .dropdown-item:active{
+    background-color: var(--easy-chef-brown) !important;
+}
+
+.recipe-filter-controls{
+    gap:10px;
+    padding-bottom:0 !important;
+}
+#search-type-dropdown-container{
+    margin-right:-10px;
+}
+#search-type-dropdown{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    height:38px;
+}
+
+#recipe-filter-search-bar{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#search-type-dropdown-container .dropdown-menu.show{
+    transform:  translate(126px, 38px) !important; 
+}
+
+#cuisine-dropdown-container .dropdown-menu.show{
+    transform:  translate(91px, 38px) !important; 
+}
+#diet-dropdown-container .dropdown-menu.show{
+    transform:  translate(147px, 38px) !important; 
+}
+#max-cooking-time-dropdown-container .dropdown-menu.show{
+    transform:  translate(137px, 38px) !important; 
+}
+
+

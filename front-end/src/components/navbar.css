@@ -1,0 +1,84 @@
+.navbar {
+    min-height: 100px !important;
+    margin-bottom: 1em;
+    padding: .5rem 1rem;
+}
+
+#easy-chef-nav-logo{
+    margin-left:20px;
+}
+
+
+#navbarDropdown:after {
+    display: none !important;
+}
+
+#navbarDropdown:focus {
+    box-shadow: none;
+}
+
+#navbarDropdown {
+    border: none !important;
+}
+
+.nav-account-dropdown {
+    margin-right: 90px;
+}
+
+#login-register-button-container .btn {
+    background-color: var(--easy-chef-brown) !important;
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+
+}
+
+#login-register-button-container .btn:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#login-register-button-container {
+    position: absolute !important;
+
+    display: flex;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .nav-account-dropdown {
+        margin-right: 0;
+        padding-left: 0;
+        position: relative !important;
+    }
+    .navbar-collapse{
+        padding-bottom: 50px;;
+    }
+    
+
+}
+
+@media only screen and (min-width: 992px) {
+    #login-register-button-container {
+
+        right: 50px;
+
+    }
+
+
+
+    .nav-account-dropdown {
+        position: absolute !important;
+        right: 0;
+    }
+
+    .dropdown-menu {
+        left: -100% !important;
+    }
+
+}

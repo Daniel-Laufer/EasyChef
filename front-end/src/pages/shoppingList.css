@@ -1,0 +1,18 @@
+.shopping-list-container .btn{
+    background-color: var(--easy-chef-brown) !important;
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+}
+
+.recipe-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    min-height: 595px;
+    justify-content: center;
+    padding-bottom: 1rem;
+    
+}

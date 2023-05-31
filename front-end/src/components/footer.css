@@ -1,0 +1,10 @@
+.svg-inline--fa{
+    color: var(--easy-chef-brown) !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height) !important;
+}

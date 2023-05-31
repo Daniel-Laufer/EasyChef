@@ -1,0 +1,20 @@
+.register-account .btn{
+    background-color: var(--easy-chef-brown) !important;
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+}
+
+.register-account .btn:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.register-account .spinner-border{
+    border-color: rgba(160, 95, 36, 0.8);
+    border-right-color: transparent;
+}
